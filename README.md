@@ -46,27 +46,25 @@ username: test@gmail.com
 password: 123456
 
 ## โครงสร้างโฟลเดอร์
-water-reminder/
-├── .vscode/               # ไฟล์ตั้งค่า VS Code Editor
-│   └── extensions.json    # ปลั๊กอินแนะนำของโปรเจกต์
-├── public/                # ไฟล์สื่อ Static (ภาพ U1-U5, ไอคอน SVG, _redirects)
-│   └── images/            # รูปภาพประกอบขนาดแก้ว/ขวดน้ำ (250ml, 500ml, 750ml, 1000ml)
+component-shop/
+├── .vscode/             # ไฟล์ตั้งค่า VS Code Editor
+├── public/              # ไฟล์สื่อ Static (ภาพ b1-b5, ไอคอน SVG, _redirects)
 ├── src/
-│   ├── assets/            # ภาพโลโก้และสื่อ (hero.png, vite.svg, vue.svg)
-│   ├── components/        # UI Components (HelloWorld.vue, Panel.vue, WaterOptionCard.vue)
-│   ├── pages/             # หน้าเว็บหลัก (AdminPage, HomePage, ImpactPage, LoginPage, SummaryPage, WaterDetailPage, WaterTrackerPage)
-│   ├── router/            # การจัดการเส้นทาง Vue Router
-│   │   └── index.js       # ไฟล์กำหนดเส้นทางหลัก
-│   ├── App.vue            # Component หลักของแอป
-│   ├── main.js            # จุดเริ่มต้นการทำงานหลัก (Entry Point)
-│   ├── store.js           # ไฟล์จัดการ State Management
-│   ├── style.css          # ไฟล์สไตล์หลัก (Global CSS)
-│   └── supabase.js        # ไฟล์เชื่อมต่อบริการ Supabase Database
-├── .env.example           # ตัวอย่างการตั้งค่า Environment Variables
-├── .env.local             # ไฟล์เก็บค่า Environment Variables (API Keys)
-├── .gitignore             # กำหนดไฟล์ที่ไม่ต้องการอัปโหลดขึ้น Git
-├── index.html             # ไฟล์ HTML หลัก
-├── package-lock.json      # ล็อกเวอร์ชันของ Dependencies
-├── package.json           # รายการ Dependencies และคำสั่งรันโปรเจกต์
-├── README.md              # เอกสารอธิบายโปรเจกต์
-└── vite.config.js         # ไฟล์ตั้งค่าสำหรับ Build ด้วย Vite
+│   ├── assets/          # ภาพโลโก้และสื่อ (hero.png, vite.svg, vue.svg)
+│   ├── components/      # UI Components (HelloWorld.vue, MedsCard.vue, Panel.vue)
+│   ├── pages/           # หน้าเว็บหลัก (AdminPage, CartPage, HomePage, ImpactPage, LoginPage, ProductDetailPage, ProductsPage)
+│   ├── router/          # การจัดการเส้นทาง Vue Router
+│   │   └── index.js     # ไฟล์กำหนดเส้นทางหลัก
+│   ├── App.vue          # Component หลักของแอป
+│   ├── main.js          # จุดเริ่มต้นการทำงานหลัก (Entry Point)
+│   ├── store.js         # ไฟล์จัดการ State Management
+│   ├── style.css        # ไฟล์สไตล์หลัก (Global CSS)
+│   └── supabase.js      # ไฟล์เชื่อมต่อบริการ Supabase Database
+├── database/            # ไฟล์โครงสร้างฐานข้อมูล SQL
+├── .env.example         # ตัวอย่างการตั้งค่า Environment Variables
+├── .gitignore           # กำหนดไฟล์ที่ไม่ต้องการอัปโหลดขึ้น Git
+├── index.html           # ไฟล์ HTML หลัก
+├── package-lock.json    # ล็อกเวอร์ชันของ Dependencies
+├── package.json         # รายการ Dependencies และคำสั่งรันโปรเจกต์
+├── README.md            # เอกสารอธิบายโปรเจกต์
+└── vite.config.js       # ไฟล์ตั้งค่าสำหรับ Build ด้วย Vite
