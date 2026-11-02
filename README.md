@@ -46,49 +46,27 @@ username: test@gmail.com
 password: 123456
 
 ## โครงสร้างโฟลเดอร์
-.
-├── .vscode/                 # ตั้งค่า Visual Studio Code
-│   └── extensions.json      # ปลั๊กอินแนะนำของโปรเจกต์
-│
-├── public/                  # ไฟล์ Static ที่เรียกใช้งานตรงผ่าน URL
-│   ├── images/              # รูปภาพประกอบขนาดแก้ว/ขวดน้ำ (250ml, 500ml, 750ml, น้ำ 1000ml)
-│   ├── _redirects           # ตั้งค่า Routing สำหรับ Deployment (เช่น Netlify)
-│   ├── favicon.svg          # ไอคอนเว็บ
-│   ├── icons.svg            # ไอคอน SVG อื่นๆ
-│   └── U1.jpg - U5.jpg      # รูปภาพผู้ใช้/องค์ประกอบอื่นๆ
-│
-├── src/                     # โค้ดหลักของแอปพลิเคชัน
-│   ├── assets/              # ไฟล์สื่อและสไตล์ที่ต้องถูก Build/Bundle (hero.png, vite.svg, vue.svg)
-│   │
-│   ├── components/          # คอมโพเนนต์ย่อยสำหรับ Reusable UI
-│   │   ├── HelloWorld.vue
-│   │   ├── Panel.vue        # กล่องแผงควบคุม/แสดงผล
-│   │   └── WaterOptionCard.vue # การ์ดตัวเลือกแก้วน้ำ/ขวดน้ำ
-│   │
-│   ├── pages/               # หน้าหลักของโปรเจกต์ (View Components)
-│   │   ├── AdminPage.vue        # หน้าจัดการสำหรับผู้ดูแลระบบ
-│   │   ├── HomePage.vue         # หน้าแรกของระบบ
-│   │   ├── ImpactPage.vue       # หน้าแสดงผลกระทบ/ประโยชน์
-│   │   ├── LoginPage.vue        # หน้าเข้าสู่ระบบ
-│   │   ├── SummaryPage.vue      # หน้าสรุปผลการดื่มน้ำ
-│   │   ├── WaterDetailPage.vue  # หน้ารายละเอียดแก้วน้ำ
-│   │   └── WaterTrackerPage.vue # หน้าบันทึก/เลือกปริมาณน้ำ
-│   │
-│   ├── router/              # การจัดการเส้นทาง (Vue Router)
-│   │   └── index.js
-│   │
-│   ├── App.vue              # Root Component หลัก
-│   ├── main.js              # จุดเริ่มต้นการทำงาน (Entry Point)
-│   ├── store.js             # การจัดการ State Management (เช่น Pinia/Vuex)
-│   ├── style.css            # สไตล์ Global CSS
-│   └── supabase.js          # ไฟล์เชื่อมต่อและตั้งค่า Supabase (Database/Auth)
-│
-├── .env.example             # ตัวอย่างการตั้งค่า Environment Variables
-├── .env.local               # ไฟล์เก็บค่า Environment Variables (API Keys)
-├── .gitignore               # กำหนดไฟล์ที่ไม่ต้องการ Commit ขึ้น Git
-├── index.html               # ไฟล์ HTML หลัก
-├── package.json             # กำหนด Dependencies และ Scripts ของโปรเจกต์
-├── package-lock.json        # ล็อกเวอร์ชันของ Dependencies
-├── README.md                # เอกสารอธิบายโปรเจกต์
-└── vite.config.js           # ไฟล์ตั้งค่า Vite Build Tool
-รวมแม่แบบไห้หน่อย
+water-reminder/
+├── .vscode/               # ไฟล์ตั้งค่า VS Code Editor
+│   └── extensions.json    # ปลั๊กอินแนะนำของโปรเจกต์
+├── public/                # ไฟล์สื่อ Static (ภาพ U1-U5, ไอคอน SVG, _redirects)
+│   └── images/            # รูปภาพประกอบขนาดแก้ว/ขวดน้ำ (250ml, 500ml, 750ml, 1000ml)
+├── src/
+│   ├── assets/            # ภาพโลโก้และสื่อ (hero.png, vite.svg, vue.svg)
+│   ├── components/        # UI Components (HelloWorld.vue, Panel.vue, WaterOptionCard.vue)
+│   ├── pages/             # หน้าเว็บหลัก (AdminPage, HomePage, ImpactPage, LoginPage, SummaryPage, WaterDetailPage, WaterTrackerPage)
+│   ├── router/            # การจัดการเส้นทาง Vue Router
+│   │   └── index.js       # ไฟล์กำหนดเส้นทางหลัก
+│   ├── App.vue            # Component หลักของแอป
+│   ├── main.js            # จุดเริ่มต้นการทำงานหลัก (Entry Point)
+│   ├── store.js           # ไฟล์จัดการ State Management
+│   ├── style.css          # ไฟล์สไตล์หลัก (Global CSS)
+│   └── supabase.js        # ไฟล์เชื่อมต่อบริการ Supabase Database
+├── .env.example           # ตัวอย่างการตั้งค่า Environment Variables
+├── .env.local             # ไฟล์เก็บค่า Environment Variables (API Keys)
+├── .gitignore             # กำหนดไฟล์ที่ไม่ต้องการอัปโหลดขึ้น Git
+├── index.html             # ไฟล์ HTML หลัก
+├── package-lock.json      # ล็อกเวอร์ชันของ Dependencies
+├── package.json           # รายการ Dependencies และคำสั่งรันโปรเจกต์
+├── README.md              # เอกสารอธิบายโปรเจกต์
+└── vite.config.js         # ไฟล์ตั้งค่าสำหรับ Build ด้วย Vite
