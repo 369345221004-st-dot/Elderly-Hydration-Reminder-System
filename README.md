@@ -46,7 +46,9 @@ username: test@gmail.com
 password: 123456
 
 ## โครงสร้างโฟลเดอร์
+
 water-reminder/
+```text
 ├── .vscode/               # ไฟล์ตั้งค่า VS Code Editor
 │   └── extensions.json    # ปลั๊กอินแนะนำของโปรเจกต์
 ├── public/                # ไฟล์สื่อ Static (ภาพ U1-U5, ไอคอน SVG, _redirects)
