@@ -52,7 +52,7 @@ water-reminder/
 ├── .vscode/               # ไฟล์ตั้งค่า VS Code Editor
 │   └── extensions.json    # ปลั๊กอินแนะนำของโปรเจกต์
 ├── public/                # ไฟล์สื่อ Static (ภาพ U1-U5, ไอคอน SVG, _redirects)
-│   └── images/            # รูปภาพประกอบขนาดแก้ว/ขวดน้ำ (250ml, 480, 500ml, 750ml,)
+│   └── images/            # รูปภาพประกอบขนาดแก้ว/ขวดน้ำ (250ml, 500ml, 750ml, 1000ml,)
 ├── src/
 │   ├── assets/            # ภาพโลโก้และสื่อ (hero.png, vite.svg, vue.svg)
 │   ├── components/        # UI Components (HelloWorld.vue, Panel.vue, WaterOptionCard.vue)
