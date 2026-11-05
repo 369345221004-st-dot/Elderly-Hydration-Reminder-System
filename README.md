@@ -65,7 +65,6 @@ water-reminder/
 │   ├── style.css          # ไฟล์สไตล์หลัก (Global CSS)
 │   └── supabase.js        # ไฟล์เชื่อมต่อบริการ Supabase Database
 ├── .env.example           # ตัวอย่างการตั้งค่า Environment Variables
-├── .env.local             # ไฟล์เก็บค่า Environment Variables (API Keys)
 ├── .gitignore             # กำหนดไฟล์ที่ไม่ต้องการอัปโหลดขึ้น Git
 ├── index.html             # ไฟล์ HTML หลัก
 ├── package-lock.json      # ล็อกเวอร์ชันของ Dependencies
